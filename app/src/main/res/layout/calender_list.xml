@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="8dp"
+        android:id="@+id/layout_event_list_detail"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/txt_event_list_name"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content"
+            android:text="Event Name"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_event_list_date"
+            android:layout_width="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content"
+            android:text="Event Date"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_event_list_time"
+            android:layout_width="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content"
+            android:text="Event Time"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignTop="@id/layout_event_list_detail"
+        android:layout_alignBottom="@id/layout_event_list_detail"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txt_event_list_color"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"/>
+</RelativeLayout>

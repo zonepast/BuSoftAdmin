@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/x_text_dashborad_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text=""
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/y_text_dashborad_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="text2"
+            android:textColor="#ffff0000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/z_text_dashborad_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="text3"
+            android:textColor="#00ddff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/a_text_dashborad_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="text4"
+            android:textColor="#1aa14c"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_dashboard_report_graph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

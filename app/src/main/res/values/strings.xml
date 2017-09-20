@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FMS</string>
+
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+
+    <string name="userdrawer_open">Open</string>
+    <string name="userdrawer_close">Close</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_dashboard"></string>
+    <string name="title_activity_upload_document">Upload Document</string>
+    <string name="title_activity_load_document">LoadDocumentActivity</string>
+    <string name="title_activity_calender"></string>
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="title_activity_report_detail">ReportDetailActivity</string>
+    <string name="title_activity_report2">Report2Activity</string>
+    <string name="title_activity_cheque">Cheque Receipt</string>
+</resources>

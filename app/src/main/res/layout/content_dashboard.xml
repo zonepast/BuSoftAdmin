@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prudent.busoftadmin.ui.Dashboard.DashboardActivity"
+    tools:showIn="@layout/activity_dashboard">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_dashboard_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_dashboard"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_dashboard_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.prudent.busoftadmin.utils.RecyclerGallery
+                android:id="@+id/recyclerview_dashboard_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_report2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_dashboard_report2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_dashboard_report2_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="22-07-2017"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_calender"
+                        android:padding="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/white" />
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_report2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:el_duration="1000"
+                        app:el_expanded="true"
+                        app:el_parallax="0.5">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_dashboard_report2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_dashboard_statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_dashboard_statement_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@drawable/ic_expand"
+                        android:drawablePadding="5dp"
+                        android:padding="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/white" />
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_statement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:el_duration="1000"
+                        app:el_expanded="false"
+                        app:el_parallax="0.5">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview_dashboard_statement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txt_dashboard_graph"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.97"
+                            android:ellipsize="end"
+                            android:gravity="start|center_vertical"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:text="title"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white" />
+
+                        <ToggleButton
+                            android:foreground="?attr/selectableItemBackground"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0.03"
+                            android:id="@+id/icon_switch_report"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button_graph"
+                            android:checked="false"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""/>
+                    </LinearLayout>
+
+                    <com.wajahatkarim3.easyflipview.EasyFlipView
+                        android:id="@+id/flip_layout_report_dashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:flipDuration="500"
+                        app:flipOnTouch="false"
+                        app:flipEnabled="true">
+
+                        <include layout="@layout/layout_dashboard_graph" />
+
+                        <include layout="@layout/layout_dashboard_graph_recyclerview" />
+
+                    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dashboard" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_upload_document"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Upload Document"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

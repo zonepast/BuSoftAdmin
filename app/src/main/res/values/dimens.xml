@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_dialog">-8dp</dimen>
+    <dimen name="delete">5dp</dimen>
+    <dimen name="statement">5dp</dimen>
+    <dimen name="report2">10dp</dimen>
+</resources>
